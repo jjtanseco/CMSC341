@@ -1,0 +1,95 @@
+Script started on Wed 20 Sep 2017 10:31:42 PM EDT
+[tanseco1@linux3 hw2]make q1
+make: `q1' is up to date.
+[tanseco1@linux3 hw2]./q1
+[tanseco1@linux3 hw2]valgrind q1
+==30229== Memcheck, a memory error detector
+==30229== Copyright (C) 2002-2012, and GNU GPL'd, by Julian Seward et al.
+==30229== Using Valgrind-3.8.1 and LibVEX; rerun with -h for copyright info
+==30229== Command: q1
+==30229== 
+==30229== 
+==30229== HEAP SUMMARY:
+==30229==     in use at exit: 80 bytes in 10 blocks
+==30229==   total heap usage: 10 allocs, 0 frees, 80 bytes allocated
+==30229== 
+==30229== LEAK SUMMARY:
+==30229==    definitely lost: 80 bytes in 10 blocks
+==30229==    indirectly lost: 0 bytes in 0 blocks
+==30229==      possibly lost: 0 bytes in 0 blocks
+==30229==    still reachable: 0 bytes in 0 blocks
+==30229==         suppressed: 0 bytes in 0 blocks
+==30229== Rerun with --leak-check=full to see details of leaked memory
+==30229== 
+==30229== For counts of detected and suppressed errors, rerun with: -v
+==30229== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 8 from 6)
+[tanseco1@linux3 hw2]make q2
+make: `q2' is up to date.
+[tanseco1@linux3 hw2],.[K[K./q2
+ptr[0] = 0
+ptr[1] = 1
+ptr[2] = 2
+ptr[3] = 3
+ptr[4] = 4
+ptr[5] = 5
+ptr[6] = 6
+ptr[7] = 7
+ptr[8] = 8
+ptr[9] = 9
+Sum = 45
+Sum = 105
+[tanseco1@linux3 hw2]valgrind q2
+==30396== Memcheck, a memory error detector
+==30396== Copyright (C) 2002-2012, and GNU GPL'd, by Julian Seward et al.
+==30396== Using Valgrind-3.8.1 and LibVEX; rerun with -h for copyright info
+==30396== Command: q2
+==30396== 
+ptr[0] = 0
+ptr[1] = 1
+ptr[2] = 2
+ptr[3] = 3
+ptr[4] = 4
+ptr[5] = 5
+ptr[6] = 6
+ptr[7] = 7
+ptr[8] = 8
+ptr[9] = 9
+Sum = 45
+Sum = 105
+==30396== 
+==30396== HEAP SUMMARY:
+==30396==     in use at exit: 0 bytes in 0 blocks
+==30396==   total heap usage: 2 allocs, 2 frees, 100 bytes allocated
+==30396== 
+==30396== All heap blocks were freed -- no leaks are possible
+==30396== 
+==30396== For counts of detected and suppressed errors, rerun with: -v
+==30396== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 8 from 6)
+[tanseco1@linux3 hw2]make q3
+make: `q3' is up to date.
+[tanseco1@linux3 hw2]./q3
+-34 89 24 -42 21 11 4 -18 2 13 
+-42 24 13 11 89 21 -18 2 4 -34 
+11 -42 13 24 21 89 2 4 -18 -34 
+[tanseco1@linux3 hw2]valgrind q3
+==30433== Memcheck, a memory error detector
+==30433== Copyright (C) 2002-2012, and GNU GPL'd, by Julian Seward et al.
+==30433== Using Valgrind-3.8.1 and LibVEX; rerun with -h for copyright info
+==30433== Command: q3
+==30433== 
+-34 89 24 -42 21 11 4 -18 2 13 
+-42 24 13 11 89 21 -18 2 4 -34 
+11 -42 13 24 21 89 2 4 -18 -34 
+==30433== 
+==30433== HEAP SUMMARY:
+==30433==     in use at exit: 0 bytes in 0 blocks
+==30433==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==30433== 
+==30433== All heap blocks were freed -- no leaks are possible
+==30433== 
+==30433== For counts of detected and suppressed errors, rerun with: -v
+==30433== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 8 from 6)
+[tanseco1@linux3 hw2]exit
+exit
+
+Script done on Wed 20 Sep 2017 10:34:28 PM EDT

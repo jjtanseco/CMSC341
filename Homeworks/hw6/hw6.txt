@@ -1,0 +1,169 @@
+
+Name:
+Userid:
+
+CMSC 341 Fall 2017 Homework 6
+
+
+-------------------------------------------------------------------
+Question A (15 points) 
+-------------------------------------------------------------------
+
+Suppose we use the MAD method for hashing into a hash table with 13
+slots with parameters a = 3 and b = 5. That is, key k is hashed into 
+slot number (3*k + 5) % 13. 
+
+Show the placement of the keys after inserting the following keys 
+in the given order into the hash table using separate chaining to
+handle collisions. 
+
+Keys inserted (in order):  8 10 25 2 31 12 5 18 
+
+Type in each key on the same line as the index of the slot 
+where it is eventually inserted.
+
+   0: 
+   1:
+   2: 25
+   3: 8
+   4: 
+   5:
+   6:
+   7:
+   8:
+   9: 10
+  10:
+  11:
+  12:
+
+
+-------------------------------------------------------------------
+Question B (15 points) 
+-------------------------------------------------------------------
+
+Repeat Question A using linear probing to handle collisions.
+
+Keys inserted (in order):  8 10 25 2 31 12 5 18 
+
+Type in each key on the same line as the index of the slot 
+where it is eventually inserted.
+
+   0: 
+   1:
+   2:
+   3:
+   4:
+   5:
+   6:
+   7:
+   8:
+   9: 
+  10:
+  11:
+  12:
+
+
+-------------------------------------------------------------------
+Question C (15 points) 
+-------------------------------------------------------------------
+
+Repeat Question A using quadratic probing to handle collisions.
+
+Keys inserted (in order):  8 10 25 2 31 12 5 18 
+
+Type in each key on the same line as the index of the slot 
+where it is eventually inserted.
+
+   0: 
+   1:
+   2:
+   3:
+   4:
+   5:
+   6:
+   7:
+   8:
+   9: 
+  10:
+  11:
+  12:
+
+
+-------------------------------------------------------------------
+Question D  (35 points total)
+-------------------------------------------------------------------
+
+We want to support the operations Insert(), Find() and Max() for 
+a program that uses n Insert(), n Find() and 15 Max() operations.
+These operations can be performed in any order. The Max() operation 
+simply reports the maximum valued stored in the data structure
+at the time of the call.
+
+1. (5 points) Suppose that we use a red-black tree to support this
+program. What is the asymptotic worst case running time for 
+n Insert(), n Find() and 15 Max() operations?
+
+   (a) O(n) 
+   (b) O(n log n)
+   (c) O(n^2)
+   (d) O(n^2 log n) 
+   (e) O(n^3)
+
+Answer:  
+
+
+2. (5 points) BRIEFLY explain your choice above.
+
+
+
+
+
+3. (5 points) Suppose that we use a binary max heap to support this
+program. What is the asymptotic worst case running time for   
+n Insert(), n Find() and 15 Max() operations?
+
+   (a) O(n)     
+   (b) O(n log n)
+   (c) O(n^2)
+   (d) O(n^2 log n) 
+   (e) O(n^3)
+
+Answer:  
+
+
+
+4. (5 points) BRIEFLY explain your choice above.
+
+
+
+
+
+5. (5 points) Suppose that we use a hash table with a "good"
+hash function to support this program. What is the asymptotic 
+"average" running time for n Insert(), n Find() and 15 Max() 
+operations?
+
+   (a) O(n)     
+   (b) O(n log n)
+   (c) O(n^2)
+   (d) O(n^2 log n) 
+   (e) O(n^3)
+
+Answer:  
+
+
+
+6. (5 points) BRIEFLY explain your choice above.
+
+
+
+
+
+7. (5 points) Which of these three data structures would you
+pick to support n Insert(), n Find() and 15 Max() operations?
+Briefly justify your answer.
+
+
+
+
+
